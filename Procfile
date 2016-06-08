@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -b 0.0.0.0:$PORT -k gevent app:auto_bot_twitter.py
+web: gunicorn -w 2 -b 0.0.0.0:$PORT -k gevent auto_bot_twitter:app
